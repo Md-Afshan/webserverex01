@@ -56,10 +56,9 @@ class MyServer(BaseHTTPRequestHandler):
         self.wfile.write(content.encode())
 
 print("This is my webserver") 
-server_address =('',80)
+server_address =('',8006)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
-
 
 ```
 
